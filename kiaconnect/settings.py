@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-c4^a!q2d!%v%n
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'RENDER' not in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -64,6 +64,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'kiaconnect.urls'
+
+ALLOWED_HOSTS = ['*']
 
 TEMPLATES = [
     {
